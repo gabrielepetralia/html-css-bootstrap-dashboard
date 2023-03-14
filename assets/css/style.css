@@ -18,8 +18,7 @@ header .logo-mobile {
 }
 
 header .gp-form input::placeholder {
-  font-size: 0.85rem;
-  font-weight: 600;
+  font-size: 0.9rem;
   color: gray;
 }
 
@@ -32,8 +31,16 @@ header .gp-form button:focus {
 
 /* Main */
 main {
-  /* debug */
-  min-height: 500px;
-  background-color: bisque;
+  padding-top: 70px;
+  height: 100vh;
 }
 
+main .gp-sidebar {
+  background-color: #051e34;
+  background-image: url('../img/sidebar-bg.png');
+}
+
+main .gp-sidebar ul li:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.4);
+}
