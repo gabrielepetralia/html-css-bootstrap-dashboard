@@ -19,10 +19,69 @@
 
     <title>Dashboard</title>
   </head>
-
+    
   <body>
-    <header>
+    <header class="fixed-top">
+      <nav class="gp-nav px-1">
+        <div class="container-fluid h-100">
+          <div class="row align-items-center h-100"> 
 
+            <div class="col-auto">
+              <a href="index.html" class="d-none d-lg-block">
+                <img class="img-fluid" src="assets/img/logo.svg" alt="">
+              </a>
+              <a href="index.html" class="logo-mobile d-lg-none">
+                <img class="img-fluid logo-mobile" src="assets/img/mobile-logo.png" alt="">
+              </a>
+            </div>
+
+            <div class="col">
+              <form class="gp-form container-fluid rounded overflow-hidden px-0" role="search">
+                <div class="input-group">
+                  <button class="bg-body-secondary border-0 px-3 py-2" type="submit">
+                    <i class="text-dark-emphasis fa-solid fa-magnifying-glass"></i>
+                  </button>
+                  <input class="form-control bg-body-secondary border-0  px-0" type="search" placeholder="Prova a cercare: Lezioni di Laravel">
+                </div>
+              </form>
+            </div>
+            
+            <div class="col-auto">
+              <ul class="list-unstyled d-flex align-items-center h-100 m-0 p-0">
+                <div class="d-none d-lg-flex">
+                  <li class="nav-item me-4">
+                    <a class="nav-link" href="#" role="button">
+                      <i class="text-dark-emphasis fa-solid fa-list-ul"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item me-4">
+                    <a class="nav-link" href="#" role="button">
+                      <i class="text-dark-emphasis fa-solid fa-circle-question"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item me-4">
+                    <a class="nav-link" href="#" role="button">
+                      <i class="text-dark-emphasis fa-solid fa-ellipsis-vertical"></i>
+                    </a>
+                  </li>
+                </div>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="text-warning fa-solid fa-bell"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Profilo</a></li>
+                    <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>

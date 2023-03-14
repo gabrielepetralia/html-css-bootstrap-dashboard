@@ -2,3 +2,38 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/* Header */
+header {
+  background-color: white;
+}
+
+header .gp-nav {
+  height: 70px;
+}
+
+header .logo-mobile {
+  width: 48px;
+}
+
+header .gp-form input::placeholder {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: gray;
+}
+
+header .gp-form input:focus,
+header .gp-form button:focus {
+  border: 0;
+  box-shadow: none;
+}
+
+
+/* Main */
+main {
+  /* debug */
+  min-height: 500px;
+  background-color: bisque;
+}
+
