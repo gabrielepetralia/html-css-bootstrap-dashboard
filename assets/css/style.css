@@ -3,6 +3,17 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+  --bs-primary-rgb: 27, 114, 232;
+}
+
+.gp-badge {
+  font-size: 0.85rem;
+  background-color: #165bba;
+  padding: 4px 10px;
+  border-radius: 50px;
+  white-space: nowrap;
+}
 
 /* Header */
 header {
