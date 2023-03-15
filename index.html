@@ -17,6 +17,7 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <link rel="icon" type="image/x-icon" href="assets/img/class-avatar.jpeg">
     <title>Dashboard</title>
   </head>
     
@@ -121,16 +122,79 @@
                 <span>Nuovo Studente</span>
                 <button class="btn btn-outline-light fs-4 py-0 mx-3 mx-md-2 mx-xl-3" type="button" data-bs-toggle="offcanvas"
                   data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
-              
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                
+                <!-- offcanvas -->
+                <div class="gp-offcanvas offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                   <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo utente</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
                   <div class="offcanvas-body">
-                    ...
+                    <div class="container-fluid">
+                      <div class="row text-start">
+                        <div class="col-sm-6 mb-2">
+                            <span>Nome</span>
+                            <input type="text" class="form-control d-block mt-1">
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                          <span>Cognome</span>
+                            <input type="text" class="form-control d-block mt-1">
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                          <span>Email</span>
+                          <div class="input-group flex-nowrap">
+                            <span class="input-group-text" id="addon-wrapping">@</span>
+                            <input type="email" class="form-control">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                          <span>Password</span>
+                          <input type="password" class="form-control d-block  mt-1">
+                        </div>
+                        <div class="col-12 mb-3">
+                          <span>Indirizzo</span>
+                          <input type="text" class="form-control d-block  mt-1">
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                          <span>Città</span>
+                          <input type="text" class="form-control d-block  mt-1">
+                        </div>
+                        <div class="col-sm-4 mb-3">
+                          <span>Stato</span>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>Scegli...</option>
+                            <option value="1">Italia</option>
+                            <option value="2">Inghilterra</option>
+                            <option value="3">Francia</option>
+                            <option value="4">Spagna</option>
+                            <option value="5">Germania</option>
+                          </select>
+                        </div>
+                        <div class="col-sm-2 mb-3">
+                          <span>CAP</span>
+                          <input type="text" class="form-control d-block  mt-1">
+                        </div>
+                        <div class="col-12 mb-4">
+                          <span>Foto</span>
+                          <div class="input-group mt-1">
+                            <input type="file" class="form-control" id="foto">
+                          </div>
+                        </div>
+                        <div class="col-12 mb-3">
+                          <input class="form-check-input align-baseline me-1" type="checkbox" value=""
+                            aria-label="Checkbox for following text input">
+                          <span class="align-top">Seleziona per proseguire</span>
+                        </div>
+                        <div class="col mb-4">
+                          <button type="button" class="btn btn-primary">Salva</button>
+                          <button type="button" class="btn btn-warning">Svuota</button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <!-- /offcanvas -->
+
               </div>
 
               <div class="col-md-4 col-xl-6 mb-4 mb-md-1">
@@ -329,7 +393,7 @@
                     <h3>F.A.Q.</h3>
                   </div>
                   <div class="card-body">
-                    <div class="accordion" id="accordionExample">
+                    <div class="accordion" id="faqAccordion">
 
                       <div class="accordion-item  gp-fs-sm border-top-0 border-start-0 border-end-0">
                         <h2 class="accordion-header" id="headingOne">

@@ -63,3 +63,7 @@ main .gp-sidebar ul li:hover {
 main td img.tag-img {
   width: 32px;
 }
+
+main .gp-offcanvas {
+  width: 800px !important;
+}
